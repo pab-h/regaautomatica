@@ -65,7 +65,7 @@ void setup() {
   attachInterrupt(
     digitalPinToInterrupt(BUTTON_PIN),
     ISRSetIsForcedPumping,
-    CHANGE
+    RISING
   );
 
   Serial.begin(9600);
